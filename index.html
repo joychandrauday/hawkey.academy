@@ -94,7 +94,7 @@
                 <a class="btn bg-base-color capitalize text-white px-6 font-bold hover:bg-[#000000]">get ticket</a>
             </div>
         </div>
-        <div class="header-banner container mx-auto mt-12 h-[80vh] flex overflow-hidden items-center rounded-lg">
+        <div class="header-banner container mx-auto mt-12 lg:h-[80vh] lg:flex overflow-hidden items-center rounded-lg">
             <div class="header-banner-wrapper relative rounded-lg">
                 <div class="header-banner-slider">
                     <div class="carousel w-full overflow-hidden">
@@ -128,27 +128,24 @@
                     </div>
                 </div>
             </div>
-            <div class=" text-white">
-                <h1></h1>
-                <p></p>
-            </div>
-            <div
-                class="card header-card bg-black rounded-lg p-2 absolute lg:w-1/2 right-16 bottom-4 text-primary-content">
+            <div class="card header-card bg-black rounded-lg p-2 lg:absolute lg:w-1/2 lg:right-16 lg:bottom-4 text-primary-content w-full">
                 <div class="card-body">
                     <h2 class="card-title uppercase text-2xl">Meet all the heroes from the field</h2>
-                    <p>Unlock your full potential on the ice with our elite hockey academy. Expert coaching,
-                        cutting-edge training, and championship development await</p>
+                    <p>Unlock your full potential on the ice with our elite hockey academy. Expert coaching, cutting-edge training, and championship development await</p>
                 </div>
             </div>
         </div>
     </header>
     <!-- main section  -->
     <main>
-        <div class="professional-section container mx-auto py-16">
-            <h1 class="capitalize text-center text-3xl font-extrabold text-[#131318] ">Professional Hockeys Club</h1>
-            <p class="w-2/3 mx-auto text-center">Elevate your game at our premier hockey academy. Expert coaching,
-                state-of-the-art facilities, and personalized training for aspiring players. Excel on ice</p>
-            <div class="progress-bar-wrapper grid grid-cols-4 gap-4 mt-16 text-center">
+        <div class="professional-section container mx-auto lg:py-16">
+            <div class="professional-header border-dotted border-b-2 border-t-2 py-8">
+
+                <h1 class="capitalize text-center text-3xl font-extrabold text-[#131318] ">Professional Hockeys Club</h1>
+                <p class="lg:w-2/3 mx-auto text-center">Elevate your game at our premier hockey academy. Expert coaching,
+                    state-of-the-art facilities, and personalized training for aspiring players. Excel on ice</p>
+            </div>
+            <div class="progress-bar-wrapper lg:grid grid-cols-4 gap-4 lg:mt-16 text-center">
                 <div class="progress-bar p-4 ">
                     <div class="radial">
                         <div class="radial-progress text-[#FF4240] bg-[#ff434061] text-4xl font-bold"
@@ -190,16 +187,18 @@
             </div>
         </div>
         <div class="program-section container mx-auto py-8">
-            <h1 class="font-extrabold text-4xl text-center capitalize text-black">training programs and admission</h1>
-            <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">join our Professional coaches, personalized
-                drills, strategic gameplay, and advanced skills development for aspiring athletes</p>
+            <div class="program-heading border-dotted border-b-2 border-t-2 py-8">
+                <h1 class="font-extrabold text-4xl text-center capitalize text-black">training programs and admission</h1>
+                <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">join our Professional coaches, personalized
+                    drills, strategic gameplay, and advanced skills development for aspiring athletes</p>
+            </div>
 
             <div class="program-wrapper pt-12">
                 <div class="program-row lg:grid grid-cols-2 gap-4">
                     <div class="program program1 text-white">
                         <div class="program-wrap">
                             <h3 class="capitalize text-3xl font-bold">junior program</h3>
-                            <p class="text-sub-text  my-4 w-2/3 text-white">Junior hockey program: Skill development,
+                            <p class="text-sub-text  my-4 lg:w-2/3 text-white">Junior hockey program: Skill development,
                                 team play, and fitness for ages 8-14. Expert coaching, fun drills, and competitive play.
                                 Join us!</p>
                             <button class="btn capitalize bg-base-color text-white px-8">register now!</button>
@@ -208,7 +207,7 @@
                     <div class="program program2 text-white">
                         <div class="program-wrap">
                             <h3 class="capitalize text-3xl font-bold">teenage program</h3>
-                            <p class="text-sub-text  my-4 w-2/3 text-white">Elite Teen Hockey Program: Intensive
+                            <p class="text-sub-text  my-4 lg:w-2/3 text-white">Elite Teen Hockey Program: Intensive
                                 training, expert coaching, skill development, strategic gameplay, fitness conditioning.
                                 Elevate your game, join us now!</p>
                             <button class="btn capitalize bg-base-color text-white px-8">register now!</button>
@@ -219,7 +218,7 @@
                     <div class="program program3 text-white">
                         <div class="program-wrap">
                             <h3 class="capitalize text-3xl font-bold">professional program</h3>
-                            <p class="text-sub-text  my-4 w-1/2 text-white">Elite hockey training at our academy's
+                            <p class="text-sub-text  my-4 lg:w-1/2 text-white">Elite hockey training at our academy's
                                 pro-level course: Advanced skills, strategic insights, personalized coaching, and
                                 top-tier facilities. Elevate your game!</p>
                             <button class="btn capitalize bg-base-color text-white px-8">register now!</button>
@@ -228,10 +227,12 @@
                 </div>
             </div>
         </div>
-        <div class="product-section container mx-auto py-12">
-            <h1 class="font-extrabold text-4xl text-center capitalize text-black">Our New Products</h1>
-            <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">Explore top-notch hockey gear and apparel at
-                our academy's shop. Quality sticks, jerseys, and accessories for passionate players. Gear up now</p>
+        <div class="product-section container mx-auto py-12 ">
+            <div class="border-dotted border-b-2 border-t-2 py-8">
+                <h1 class="font-extrabold text-4xl text-center capitalize text-black">Our New Products</h1>
+                <p class="subt-text lg:w-2/3 mx-auto text-center my-4 capitalize">Explore top-notch hockey gear and apparel at our academy's shop. Quality sticks, jerseys, and accessories for passionate players. Gear up now</p>
+
+            </div>
 
             <div class="product-wrap p-16">
                 <div class="product-row lg:grid grid-cols-2 gap-3 justify-items-center">
@@ -386,7 +387,7 @@
             <h1 class="font-extrabold text-4xl text-center capitalize text-black">Clients Question</h1>
             <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">here you will get the questions that are
                 frequently asked by clients.</p>
-            <div class="faq-wrapper flex items-center pt-8">
+            <div class="faq-wrapper lg:flex items-center pt-8">
                 <div class="faq-banner basis-2/4 flex justify-end p-4">
                     <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/11.png?raw=true" alt="">
                 </div>
@@ -433,7 +434,7 @@
         <div class="contact-section container py-8 mx-auto">
             <h1 class="font-extrabold text-4xl text-center capitalize text-black">get in touch</h1>
             <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">contact us for all the course and programs. lets get in touch to make your career.</p>
-            <div class="contact-wrapper flex">
+            <div class="contact-wrapper lg:flex">
                 <div class="contact-left basis-1/3 p-8 border-2 border-gray-300 rounded-md">
                     <div class="contact-list bg-[#bced6d1a] p-8 rounded-md mb-4">
                         <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/Group%201171275317.png?raw=true" alt="">
@@ -451,9 +452,9 @@
                         <h3 class="font-extrabold text-xl">152/1 Mohakhali Wireless Gate</h3>
                     </div>
                 </div>
-                <div class="contact-right basis-2/3 px-8 mt-4">
+                <div class="contact-right basis-2/3 lg:px-8 mt-4">
                     <form action="" class="">
-                        <div class="grid grid-cols-2">
+                        <div class="lg:grid grid-cols-2">
                             <div class="form-input">
                             
                                 <label class="capitalize font-bold " for="name">your name:</label><br>
@@ -494,29 +495,45 @@
         </div>
     </main>
     <!-- main section  -->
-    <footer class="footer p-16 bg-[#131318] lg:grid-cols-4 text-[#e0a9a9] justify-items-center mt-8">
-        <aside>
+    <footer class="footer mobile-footer p-16 bg-[#131318] lg:grid-cols-4 text-[#e0a9a9] justify-items-center mt-8">
+        <aside class="nav-1">
           <h1 class="text-white uppercase text-2xl font-extrabold">get in touch</h1>
-          <p class="w-4/5"><a class=" text-xl font-bold uppercase hover:bg-transparent  leading-10 text-base-color cursor-pointer">Hawkey<span
+          <p class="w-4/5 footer_p"><a class=" text-xl font-bold uppercase hover:bg-transparent  leading-10 text-base-color cursor-pointer">Hawkey<span
             class="text-base-color lowercase hover:text-black">.academy</span></a><br/>Expert coaching, state-of-the-art facilities, and personalized training for aspiring players.</p>
             <div class="footer-add"><i class="fa fa-envelope text-base-color mr-2"></i> hockeys@support.com</div>
             <div class="footer-add"><i class="fa fa-phone text-base-color mr-2"></i> (+62) 123-321-543</div>
         </aside> 
-        <nav>
+        <nav class="nav-2">
           <header class="footer-title">Company</header> 
           <a class="link link-hover">About us</a>
           <a class="link link-hover">Leadership</a>
           <a class="link link-hover">Jobs</a>
           <a class="link link-hover">Press kit</a>
         </nav> 
-        <nav>
+        <nav class="nav-3">
           <header class="footer-title">Services</header> 
           <a class="link link-hover">Branding</a>
           <a class="link link-hover">Design</a>
           <a class="link link-hover">Marketing</a>
           <a class="link link-hover">Advertisement</a>
         </nav> 
-        <nav>
+        <div class="mobile-footer-2 lg:hidden grid grid-cols-2">
+            <nav class="inline-grid text-center">
+                <header class="footer-title">Company</header> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav> 
+            <nav class="inline-grid text-center">
+                <header class="footer-title">Services</header> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav> 
+        </div>
+        <nav class="nav-4 text-center">
           <header class="footer-title">support</header> 
           <a class="link link-hover">Terms of use</a>
           <a class="link link-hover">Privacy policy</a>

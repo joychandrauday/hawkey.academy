@@ -10,7 +10,6 @@ body {
     font-weight: <weight>;
     font-style: normal;
 }
-
 /* universal css */
 /* program styles  */
 .program{
@@ -60,3 +59,62 @@ body {
 }
 
 /* program styles  */
+
+@media (max-width:640px) {
+    .container{
+        width: 95% !important;
+        margin: 0 auto;
+    }
+    .header-banner{
+        padding:20px 0 0;
+    }
+    .header-card{
+        margin-top: 10px;
+    }
+    .progress-bar{
+        margin-top: 30px;
+    }
+    .program2{
+        margin-top: 16px;
+    }
+    .product{
+        flex-direction: column;
+        margin: 10px 0;
+
+    }
+    .product-wrap{
+        padding: 0 ;
+        
+    }
+    .product-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-img{
+
+        padding-right: 0 !important;
+        padding-bottom: 20px;
+    }
+    .product-img img{
+        width: 100%;
+    }
+    .form-input input{
+        width: 100%;
+    }
+
+    .nav-2,.nav-3{
+        display: none !important;
+    }
+    .footer{
+        padding: 40px 30px;
+        justify-items: center !important;
+        
+    }
+    .footer_p{
+        text-align: center;
+    }
+    .footer>*{
+        justify-items: center !important;
+    }
+}
