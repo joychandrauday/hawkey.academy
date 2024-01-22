@@ -13,25 +13,515 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- google font link  -->
 
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
     <!-- tailwind and daisyui styles -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/js/tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'base-color': '#FF4240',
+                        'sub-text': '#13131899',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- tailwind and daisyui styles -->
 
 </head>
-    
-<body class="font-manrope">
-    <header>
 
+<body class="font-manrope">
+    <header class="container mx-auto py-8">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a
+                                class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">home</a>
+                        </li>
+                        <li><a
+                                class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">about</a>
+                        </li>
+                        <li><a
+                                class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">pages</a>
+                        </li>
+                        <li><a
+                                class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">blog</a>
+                        </li>
+                        <li><a
+                                class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl font-bold uppercase block hover:bg-transparent  leading-10">Hawkey<span
+                        class="text-base-color lowercase hover:text-black">.academy</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">home</a>
+                    </li>
+                    <li><a class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">about</a>
+                    </li>
+                    <li><a class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">pages</a>
+                    </li>
+                    <li><a class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">blog</a>
+                    </li>
+                    <li><a
+                            class="capitalize hover:text-base-color hover:bg-transparent font-bold text-black">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="mr-8 cursor-pointer hidden lg:block"><i class="fa fa-search hover:text-base-color"></i></a>
+                <a class="btn bg-base-color capitalize text-white px-6 font-bold hover:bg-[#000000]">get ticket</a>
+            </div>
+        </div>
+        <div class="header-banner container mx-auto mt-12 h-[80vh] flex overflow-hidden items-center rounded-lg">
+            <div class="header-banner-wrapper relative rounded-lg">
+                <div class="header-banner-slider">
+                    <div class="carousel w-full overflow-hidden">
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/1.png?raw=true"
+                                class="w-full" />
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide4" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/2.png?raw=true"
+                                class="mw-full" />
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/3.png?raw=true"
+                                class="w-full" />
+                            <div
+                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" text-white">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div
+                class="card header-card bg-black rounded-lg p-2 absolute lg:w-1/2 right-16 bottom-4 text-primary-content">
+                <div class="card-body">
+                    <h2 class="card-title uppercase text-2xl">Meet all the heroes from the field</h2>
+                    <p>Unlock your full potential on the ice with our elite hockey academy. Expert coaching,
+                        cutting-edge training, and championship development await</p>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- main section  -->
     <main>
+        <div class="professional-section container mx-auto py-16">
+            <h1 class="capitalize text-center text-3xl font-extrabold text-[#131318] ">Professional Hockeys Club</h1>
+            <p class="w-2/3 mx-auto text-center">Elevate your game at our premier hockey academy. Expert coaching,
+                state-of-the-art facilities, and personalized training for aspiring players. Excel on ice</p>
+            <div class="progress-bar-wrapper grid grid-cols-4 gap-4 mt-16 text-center">
+                <div class="progress-bar p-4 ">
+                    <div class="radial">
+                        <div class="radial-progress text-[#FF4240] bg-[#ff434061] text-4xl font-bold"
+                            style="--value:80; --size:12rem; --thickness: 1rem;" role="progressbar">80%</div>
+                    </div>
+                    <h2 class="font-bold capitalize text-2xl my-4">satisfied customer</h2>
+                    <p class="text-[#5b5b5b]">personalized coaching, state-of-the-art facilities, and unparalleled
+                        service satisfaction. Elevate your game with us!</p>
+                </div>
+                <div class="progress-bar p-4 ">
+                    <div class="radial">
+                        <div class="radial-progress text-[#3a0403] bg-[#ff434061] text-4xl font-bold"
+                            style="--value:83; --size:12rem; --thickness: 1rem;" role="progressbar">83%</div>
+                    </div>
+                    <h2 class="font-bold capitalize text-2xl my-4">experienced coach</h2>
+                    <p class="text-[#5b5b5b]">Elite hockey training at our academy guarantees skill enhancement,
+                        personalized coaching, state-of-the-art facilities, and unparalleled service satisfaction.
+                        Elevate your game with us!</p>
+                </div>
+                <div class="progress-bar p-4 ">
+                    <div class="radial">
+                        <div class="radial-progress text-[#000000] bg-[#ff434061] text-4xl font-bold"
+                            style="--value:89; --size:12rem; --thickness: 1rem;" role="progressbar">89%</div>
+                    </div>
+                    <h2 class="font-bold capitalize text-2xl my-4">senoir player</h2>
+                    <p class="text-[#5b5b5b]">Thriving alumni excel in professional leagues, Olympic teams, and
+                        contribute to our hockey community's success worldwide.</p>
+                </div>
+                <div class="progress-bar p-4 ">
+                    <div class="radial">
+                        <div class="radial-progress text-[#ff0303] bg-[#ff434061] text-4xl font-bold"
+                            style="--value:85; --size:12rem; --thickness: 1rem;" role="progressbar">85%</div>
+                    </div>
+                    <h2 class="font-bold capitalize text-2xl my-4">ground facilities</h2>
+                    <p class="text-[#5b5b5b]">State-of-the-art hockey facility with Olympic-grade turf, modern
+                        amenities, professional coaching, and advanced training infrastructure for aspiring players.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="program-section container mx-auto py-8">
+            <h1 class="font-extrabold text-4xl text-center capitalize text-black">training programs and admission</h1>
+            <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">join our Professional coaches, personalized
+                drills, strategic gameplay, and advanced skills development for aspiring athletes</p>
 
+            <div class="program-wrapper pt-12">
+                <div class="program-row lg:grid grid-cols-2 gap-4">
+                    <div class="program program1 text-white">
+                        <div class="program-wrap">
+                            <h3 class="capitalize text-3xl font-bold">junior program</h3>
+                            <p class="text-sub-text  my-4 w-2/3 text-white">Junior hockey program: Skill development,
+                                team play, and fitness for ages 8-14. Expert coaching, fun drills, and competitive play.
+                                Join us!</p>
+                            <button class="btn capitalize bg-base-color text-white px-8">register now!</button>
+                        </div>
+                    </div>
+                    <div class="program program2 text-white">
+                        <div class="program-wrap">
+                            <h3 class="capitalize text-3xl font-bold">teenage program</h3>
+                            <p class="text-sub-text  my-4 w-2/3 text-white">Elite Teen Hockey Program: Intensive
+                                training, expert coaching, skill development, strategic gameplay, fitness conditioning.
+                                Elevate your game, join us now!</p>
+                            <button class="btn capitalize bg-base-color text-white px-8">register now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-row grid pt-4">
+                    <div class="program program3 text-white">
+                        <div class="program-wrap">
+                            <h3 class="capitalize text-3xl font-bold">professional program</h3>
+                            <p class="text-sub-text  my-4 w-1/2 text-white">Elite hockey training at our academy's
+                                pro-level course: Advanced skills, strategic insights, personalized coaching, and
+                                top-tier facilities. Elevate your game!</p>
+                            <button class="btn capitalize bg-base-color text-white px-8">register now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-section container mx-auto py-12">
+            <h1 class="font-extrabold text-4xl text-center capitalize text-black">Our New Products</h1>
+            <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">Explore top-notch hockey gear and apparel at
+                our academy's shop. Quality sticks, jerseys, and accessories for passionate players. Gear up now</p>
+
+            <div class="product-wrap p-16">
+                <div class="product-row lg:grid grid-cols-2 gap-3 justify-items-center">
+                    <div class="product border border-gray-50 flex p-8 rounded-lg shadow-md">
+                        <div class="product-img pr-8 ">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/5.png?raw=true"
+                                alt="">
+                        </div>
+                        <div class="product-details">
+                            <div
+                                class="product-top flex items-center pb-2 text-sub-text justify-between font-bold w-48">
+                                <div class="rating mr- "><i class="fa fa-star pr-1 text-orange-500"></i>5.00</div>
+                                <div class="product-view mr-"><i class="fa-regular fa-eye pr-1"></i>20</div>
+                                <div class="product-fav mr-"><i class="fa-regular fa-heart pr-1"></i>12</div>
+                            </div>
+                            <h3 class="capitalize font-extrabold text-xl">winter jersey</h3>
+                            <p class="text-sub-text w-2/3 capitalize py-2">a jacket from our practice kit to keep you
+                                warm in winter</p>
+                            <div class="product-bottom flex justify-between w-72 ">
+                                <div class="product-price">
+                                    <h3 class="capitalize text-base-color font-bold pr-4">price-$22.00</h3>
+                                </div>
+                                <div class="product-delivery text-sub-text capitalize"><i
+                                        class="fa-solid fa-cart-shopping pr-4"></i>delivery fee:free</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product border border-gray-50 flex p-4 rounded-lg shadow-md">
+                        <div class="product-img pr-8 ">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/6.png?raw=true"
+                                alt="">
+                        </div>
+                        <div class="product-details">
+                            <div
+                                class="product-top flex items-center pb-2 text-sub-text justify-between font-bold w-48">
+                                <div class="rating mr- "><i class="fa fa-star pr-1 text-orange-500"></i>5.00</div>
+                                <div class="product-view mr-"><i class="fa-regular fa-eye pr-1"></i>20</div>
+                                <div class="product-fav mr-"><i class="fa-regular fa-heart pr-1"></i>12</div>
+                            </div>
+                            <h3 class="capitalize font-extrabold text-xl">practice ball</h3>
+                            <p class="text-sub-text w-2/3 capitalize py-2">a jacket from our practice kit to keep you
+                                warm in winter</p>
+                            <div class="product-bottom flex justify-between w-72 ">
+                                <div class="product-price">
+                                    <h3 class="capitalize text-base-color font-bold pr-4">price-$22.00</h3>
+                                </div>
+                                <div class="product-delivery text-sub-text capitalize"><i
+                                        class="fa-solid fa-cart-shopping pr-4"></i>delivery fee:free</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product border border-gray-50 flex p-4 rounded-lg shadow-md">
+                        <div class="product-img pr-8 ">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/7.png?raw=true"
+                                alt="">
+                        </div>
+                        <div class="product-details">
+                            <div
+                                class="product-top flex items-center pb-2 text-sub-text justify-between font-bold w-48">
+                                <div class="rating mr- "><i class="fa fa-star pr-1 text-orange-500"></i>5.00</div>
+                                <div class="product-view mr-"><i class="fa-regular fa-eye pr-1"></i>20</div>
+                                <div class="product-fav mr-"><i class="fa-regular fa-heart pr-1"></i>12</div>
+                            </div>
+                            <h3 class="capitalize font-extrabold text-xl">thugh cap</h3>
+                            <p class="text-sub-text w-2/3 capitalize py-2">a jacket from our practice kit to keep you
+                                warm in winter</p>
+                            <div class="product-bottom flex justify-between w-72 ">
+                                <div class="product-price">
+                                    <h3 class="capitalize text-base-color font-bold pr-4">price-$22.00</h3>
+                                </div>
+                                <div class="product-delivery text-sub-text capitalize"><i
+                                        class="fa-solid fa-cart-shopping pr-4"></i>delivery fee:free</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product border border-gray-50 flex p-4 rounded-lg shadow-md">
+                        <div class="product-img pr-8 ">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/8.png?raw=true"
+                                alt="">
+                        </div>
+                        <div class="product-details">
+                            <div
+                                class="product-top flex items-center pb-2 text-sub-text justify-between font-bold w-48">
+                                <div class="rating mr- "><i class="fa fa-star pr-1 text-orange-500"></i>5.00</div>
+                                <div class="product-view mr-"><i class="fa-regular fa-eye pr-1"></i>20</div>
+                                <div class="product-fav mr-"><i class="fa-regular fa-heart pr-1"></i>12</div>
+                            </div>
+                            <h3 class="capitalize font-extrabold text-xl">jersey kit</h3>
+                            <p class="text-sub-text w-2/3 capitalize py-2">a jacket from our practice kit to keep you
+                                warm in winter</p>
+                            <div class="product-bottom flex justify-between w-72 ">
+                                <div class="product-price">
+                                    <h3 class="capitalize text-base-color font-bold pr-4">price-$22.00</h3>
+                                </div>
+                                <div class="product-delivery text-sub-text capitalize"><i
+                                        class="fa-solid fa-cart-shopping pr-4"></i>delivery fee:free</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product border border-gray-50 flex p-4 rounded-lg shadow-md">
+                        <div class="product-img pr-8 ">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/10.png?raw=true"
+                                alt="">
+                        </div>
+                        <div class="product-details">
+                            <div
+                                class="product-top flex items-center pb-2 text-sub-text justify-between font-bold w-48">
+                                <div class="rating mr- "><i class="fa fa-star pr-1 text-orange-500"></i>5.00</div>
+                                <div class="product-view mr-"><i class="fa-regular fa-eye pr-1"></i>20</div>
+                                <div class="product-fav mr-"><i class="fa-regular fa-heart pr-1"></i>12</div>
+                            </div>
+                            <h3 class="capitalize font-extrabold text-xl">practice ball</h3>
+                            <p class="text-sub-text w-2/3 capitalize py-2">a jacket from our practice kit to keep you
+                                warm in winter</p>
+                            <div class="product-bottom flex justify-between w-72 ">
+                                <div class="product-price">
+                                    <h3 class="capitalize text-base-color font-bold pr-4">price-$22.00</h3>
+                                </div>
+                                <div class="product-delivery text-sub-text capitalize"><i
+                                        class="fa-solid fa-cart-shopping pr-4"></i>delivery fee:free</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product border border-gray-50 flex p-4 rounded-lg shadow-md">
+                        <div class="product-img pr-8 ">
+                            <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/9.png?raw=true"
+                                alt="">
+                        </div>
+                        <div class="product-details">
+                            <div
+                                class="product-top flex items-center pb-2 text-sub-text justify-between font-bold w-48">
+                                <div class="rating mr- "><i class="fa fa-star pr-1 text-orange-500"></i>5.00</div>
+                                <div class="product-view mr-"><i class="fa-regular fa-eye pr-1"></i>20</div>
+                                <div class="product-fav mr-"><i class="fa-regular fa-heart pr-1"></i>12</div>
+                            </div>
+                            <h3 class="capitalize font-extrabold text-xl">winter jersey</h3>
+                            <p class="text-sub-text w-2/3 capitalize py-2">a jacket from our practice kit to keep you
+                                warm in winter</p>
+                            <div class="product-bottom flex justify-between w-72 ">
+                                <div class="product-price">
+                                    <h3 class="capitalize text-base-color font-bold pr-4">price-$22.00</h3>
+                                </div>
+                                <div class="product-delivery text-sub-text capitalize"><i
+                                        class="fa-solid fa-cart-shopping pr-4"></i>delivery fee:free</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-section container mx-auto py-8">
+            <h1 class="font-extrabold text-4xl text-center capitalize text-black">Clients Question</h1>
+            <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">here you will get the questions that are
+                frequently asked by clients.</p>
+            <div class="faq-wrapper flex items-center pt-8">
+                <div class="faq-banner basis-2/4 flex justify-end p-4">
+                    <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/11.png?raw=true" alt="">
+                </div>
+                <div class="faq-questions basis-2/4 p-4">
+                    <div class="collapse collapse-arrow mb-4 border-b-2 border-gray-800">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Our Equipment.
+                        </div>
+                        <div class="collapse-content">
+                            <p>Premium hockey academy equipment: sticks, pads, helmets, gloves, skates, and advanced training gear for aspiring  players. Superior quality for success.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow mb-4 border-b-2 border-gray-800">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-bold">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>Our hockey academy's cutting-edge training system focuses on skill development, tactical understanding, and physical conditioning for elite players' success.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow mb-4 border-b-2 border-gray-800">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-bold">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>Elite hockey academy personal trainer specializes in tailored programs, enhancing skills, conditioning, and mental resilience for peak performance on ice.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow mb-4 border-b-2 border-gray-800 ">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-bold">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>Book your spot at our premier hockey academy for expert coaching, skill development, and an exhilarating sports experience. Join today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section container py-8 mx-auto">
+            <h1 class="font-extrabold text-4xl text-center capitalize text-black">get in touch</h1>
+            <p class="subt-text w-2/3 mx-auto text-center my-4 capitalize">contact us for all the course and programs. lets get in touch to make your career.</p>
+            <div class="contact-wrapper flex">
+                <div class="contact-left basis-1/3 p-8 border-2 border-gray-300 rounded-md">
+                    <div class="contact-list bg-[#bced6d1a] p-8 rounded-md mb-4">
+                        <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/Group%201171275317.png?raw=true" alt="">
+                        <p class="text-sub-text capitalize mt-8">phone:</p>
+                        <h3 class="font-extrabold text-xl">(+62) 123-321-543</h3>
+                    </div>
+                    <div class="contact-list bg-[#bced6d1a] p-8 rounded-md mb-4">
+                        <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/Group%201171275318.png?raw=true" alt="">
+                        <p class="text-sub-text capitalize mt-8">email:</p>
+                        <h3 class="font-extrabold text-xl">hockeys@support.com</h3>
+                    </div>
+                    <div class="contact-list bg-[#bced6d1a] p-8 rounded-md">
+                        <img src="https://github.com/joychandrauday/hawkey.academy/blob/main/Images/Group%201171275321.png?raw=true" alt="">
+                        <p class="text-sub-text capitalize mt-8">Location :</p>
+                        <h3 class="font-extrabold text-xl">152/1 Mohakhali Wireless Gate</h3>
+                    </div>
+                </div>
+                <div class="contact-right basis-2/3 px-8 mt-4">
+                    <form action="" class="">
+                        <div class="grid grid-cols-2">
+                            <div class="form-input">
+                            
+                                <label class="capitalize font-bold " for="name">your name:</label><br>
+                                <input type="text" name="name" id="" placeholder="enter your name">
+                            </div>
+                            <div class="form-input">
+                                <label class="capitalize font-bold " for="name">your email:</label><br>
+                                <input type="email" name="name" id="" placeholder="enter your email">
+                                
+                            </div>
+                            <div class="form-input">
+                                <label class="capitalize font-bold " for="name">subject:</label><br>
+                                <input type="text" name="name" id="" placeholder="enter your subject">
+                            </div>
+                            <div class="form-input">
+                                <label class="capitalize font-bold " for="name">your phone:</label><br>
+                                <input type="number" name="name" id="" placeholder="enter your phone number">
+                            </div>
+                        </div>
+                        <label class="capitalize font-bold " for="name">your message:</label>
+                        <textarea name="" id="" cols="30" rows="10" class="py-16 px-12 w-full" placeholder="write your message"></textarea>
+                        <div class="btn bg-base-color w-full text-white mt-4 capitalize hover:text-sub-text">send message</div>
+                    </form>
+                </div>
+            </div>
+            <div class="social bg-[#bced6d1a] p-8 rounded-md mt-12">
+                <div class="flex flex-col items-center justify-center">
+
+                    <h4 class="text-center font-extrabold capitalize text-2xl">social media</h4>
+                    <div class="sociallink flex justify-center">
+                        <a href="" class="p-2"><i class="text-2xl fa-brands fa-facebook"></i></a>
+                        <a href="" class="p-2"><i class="text-2xl fa-brands fa-instagram"></i></a>
+                        <a href="" class="p-2"><i class="text-2xl fa-brands fa-twitter"></i></a>
+                        <a href="" class="p-2"><i class="text-2xl fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- main section  -->
-    <footer>
-
+    <footer class="footer p-16 bg-[#131318] lg:grid-cols-4 text-[#e0a9a9] justify-items-center mt-8">
+        <aside>
+          <h1 class="text-white uppercase text-2xl font-extrabold">get in touch</h1>
+          <p class="w-4/5"><a class=" text-xl font-bold uppercase hover:bg-transparent  leading-10 text-base-color cursor-pointer">Hawkey<span
+            class="text-base-color lowercase hover:text-black">.academy</span></a><br/>Expert coaching, state-of-the-art facilities, and personalized training for aspiring players.</p>
+            <div class="footer-add"><i class="fa fa-envelope text-base-color mr-2"></i> hockeys@support.com</div>
+            <div class="footer-add"><i class="fa fa-phone text-base-color mr-2"></i> (+62) 123-321-543</div>
+        </aside> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">support</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
     </footer>
 </body>
 

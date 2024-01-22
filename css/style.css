@@ -12,3 +12,51 @@ body {
 }
 
 /* universal css */
+/* program styles  */
+.program{
+    background:linear-gradient(to bottom, #00000073, rgba(0, 0, 0, 0.73)), url('https://github.com/joychandrauday/hawkey.academy/blob/main/Images/2.png?raw=true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+}
+.program2{
+    background:linear-gradient(to bottom, #00000073, rgba(0, 0, 0, 0.73)), url('https://github.com/joychandrauday/hawkey.academy/blob/main/Images/3.png?raw=true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.program3{
+    background:linear-gradient(to bottom, #00000073, rgba(0, 0, 0, 0.73)), url('https://github.com/joychandrauday/hawkey.academy/blob/main/Images/4.png?raw=true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.product{
+    width: 90%;
+}
+.product p{
+    width: 90%;
+}
+.form-input:focus-visible{
+    
+}
+.form-input input,textarea{
+    background: #f8fdf0;
+    padding: 15px 60px 15px 20px;
+    width: 95%;
+    margin: 10px 0;
+    text-transform: capitalize;
+    border-radius: 8px;
+    outline-style:none;
+}
+.form-input{
+    margin:10px 0;
+}
+
+/* program styles  */
