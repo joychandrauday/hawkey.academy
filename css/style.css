@@ -44,7 +44,7 @@ body {
 /* program styles  */
 
 @media (max-width:640px) {
-    .container{
+    .containerr{
         width: 95% !important;
         margin: 0 auto;
     }
@@ -59,12 +59,13 @@ body {
     }
     .program{
         width: 95% !important;
+        margin: 0 auto;
     }
     .program2{
         margin-top: 16px;
     }
     .product{
-        flex-direction: column;
+        flex-direction: column !important;
         margin: 10px 0;
 
     }
