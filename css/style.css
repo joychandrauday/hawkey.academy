@@ -29,16 +29,16 @@ body {
     
 }
 .form-input input,textarea{
-    background: #f8fdf0;
-    padding: 15px 60px 15px 20px;
-    width: 95%;
-    margin: 10px 0;
-    text-transform: capitalize;
-    border-radius: 8px;
-    outline-style:none;
+    background: #f8fdf0 !important;
+    padding: 15px 60px 15px 20px !important;
+    width: 95% !important;
+    margin: 10px 0 !important;
+    text-transform: capitalize !important;
+    border-radius: 8px !important;
+    outline-style:none !important;
 }
 .form-input{
-    margin:10px 0;
+    margin:10px 0 !important;
 }
 
 /* program styles  */
